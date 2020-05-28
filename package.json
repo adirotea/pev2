@@ -1,5 +1,5 @@
 {
-  "name": "pev2",
+  "name": "pev",
   "keywords": [
     "PostgreSQL",
     "vuejs",
@@ -30,13 +30,14 @@
     "lodash": "^4.17.15",
     "moment": "^2.25.3",
     "moment-duration-format": "^2.3.2",
+    "pev2": "^0.4.0",
+    "snyk": "^1.320.3",
     "splitpanes": "^2.2.1",
     "tippy.js": "^6.2.3",
     "vue": "^2.6.10",
     "vue-class-component": "^7.2.3",
     "vue-property-decorator": "^8.4.2",
-    "vue-tippy": "^4.0.3",
-    "snyk": "^1.320.3"
+    "vue-tippy": "^4.0.3"
   },
   "devDependencies": {
     "@types/jest": "^25.1.2",

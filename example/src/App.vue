@@ -1,21 +1,30 @@
 <template>
-  <div id="app" class="d-flex flex-column vh-100">
-    <div class="navbar container">
-      <router-link tag="a" class="btn btn-secondary ml-auto" to="/">
-        New Plan
-      </router-link>
-      <router-link tag="a" class="btn btn-link" to="about">
-        About
-      </router-link>
-    </div>
-    <router-view></router-view>
+  <div id="app" class="d-flex">
+    <pev2 :plan-source="plan" :plan-query="query"></pev2>
   </div>
 </template>
 
-<script lang="ts">
-import { Component, Vue } from 'vue-property-decorator';
-export const planData: any[] = ['', ''];
+<script>
+import pev2 from "pev2";
 
-@Component
-export default class App extends Vue {}
+export default {
+  name: "App",
+  data: function() {
+    return {
+      plan: this.$route.query.plan || '',
+      query: this.$route.query.query || ''
+    };
+  },
+  components: {
+    pev2
+  }
+};
 </script>
+
+<style lang="scss">
+html,
+body,
+#app {
+  height: 100%;
+}
+</style>
